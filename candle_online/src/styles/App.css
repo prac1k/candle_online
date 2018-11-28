@@ -9,7 +9,7 @@
 
 .App-header {
   background-color: #4248f4;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,12 +18,12 @@
   color: white;
 }
 
-.button
-{
-  display: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 14pt;
-  color: white;
+
+.Result {
+  font-size: 70px;
+  color: Green;
+}
+
+.Button {
+  color: Green;
 }
