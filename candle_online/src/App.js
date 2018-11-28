@@ -1,7 +1,6 @@
 import logo from "./candle.png";
 import React from 'react';
 import './styles/App.css';
-import './components/Button'
 
 class Button extends React.Component {
     handleClick = () => {
@@ -10,7 +9,9 @@ class Button extends React.Component {
 
     render() {
         return (
-            <button onClick={this.handleClick}>
+            <button style={
+                this.props.style
+            }onClick={this.handleClick}>
                 +{this.props.incrementValue}
             </button>
         )
@@ -49,8 +50,16 @@ class App extends React.Component {
                         On - line. Lit it !
                     </p>
                 </header>
-                <div className={Button}>
-                    <Button incrementValue={1} onClickFunction={this.incrementCounter} />
+                <div className="Button">
+                    <Button style={ {
+                        color: 'red' ,
+                    }
+                    }
+
+
+                            className="Button"
+                            incrementValue={1}
+                            onClickFunction={this.incrementCounter} />
                 </div>
                 <div className="Result">
                     <Result counter={this.state.counter} />
