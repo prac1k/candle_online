@@ -1,7 +1,8 @@
-import logo from "./candle.png";
+import candle from "./candle.png";
 import React from 'react';
 import './styles/App.css';
 import fire from "./fire.png";
+
 
 class Button extends React.Component {
     handleClick = () => {
@@ -30,12 +31,13 @@ const Result = props => {
 class App extends React.Component {
 
 
-    state = {counter: 0, show_img:false}
+    state = {counter: 0, show_img_fire:false}
 
     incrementCounter = incrementValue => {
         this.setState(prevstate => ({
             counter: prevstate.counter + incrementValue,
-            show_img: true
+            show_img_fire: true
+
         }))
     }
 
@@ -46,9 +48,9 @@ class App extends React.Component {
                 <header
                     className="App-header">
                     <img
-                        src={ logo }
-                        className="App-logo"
-                        alt="logo"/>
+                        src={ candle }
+                        className="App-candle"
+                        alt="candle"/>
                     <p>
                         Candle
                         On - line. Lit it !
@@ -95,9 +97,10 @@ class App extends React.Component {
                     'block-size': 'fit-content',
                     height: '40vmin',
                     position: 'fixed',
-                                    }
-                }>
-                    {this.state.show_img &&
+                }
+                }
+                >
+                    {this.state.show_img_fire &&
                      <img
                         src={fire}
                         className="Fireimage"

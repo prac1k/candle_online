@@ -7,7 +7,7 @@
   background-color: #4248f4;
 }
 
-.App-logo {
+.App-candle {
   height: 40vmin;
 }
 
@@ -54,4 +54,8 @@
   position: relative;
   top: -850px;
   left: 865px;
+}
+
+.Fireimage:hover {
+  visibility: hidden;
 }
