@@ -55,9 +55,9 @@ class App extends React.Component {
                 <div className="Button">
                     <Button style={ {
                         color: 'black',
-                        background: '#C0C0C0',
+                        background: 'white',
                         position: 'absolute',
-                        top: '727px',
+                        bottom: '296px',
                         left: '913px',
                         'padding-top': '15px',
                         'padding-right': '30px',
@@ -68,15 +68,31 @@ class App extends React.Component {
 
 
                             className="Button"
-
-                            incrementValue={"1"}
+                                                incrementValue={1}
                             onClickFunction={this.incrementCounter} />
                 </div>
-                <div className="Result">
+                <div className="Text">
+                    <p>
+                        Candles lited:
+                        </p>
+                </div>
+                <div className="Result" style={ {
+                    'block-size': 'fit-content',
+                    'font-size': '70px',
+                    color: 'White',
+                    'background-color': '#4248f4',
+                    position: 'fixed',
+                    bottom: '96px',
+                    right: '450px',
+                }
+                }
+                >
                     <Result counter={this.state.counter} />
             </div>
             </div>
+
         )
+
     }
 }
 

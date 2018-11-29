@@ -1,15 +1,19 @@
+.gr__localhost {
+  background-color: #4248f4;
+}
+
 .App {
   text-align: center;
+  background-color: #4248f4;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
 
 .App-header {
   background-color: #4248f4;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,16 +24,26 @@
 
 
 .Result {
+  block-size: fit-content;
   font-size: 70px;
   color: White;
   background-color: #4248f4;
-  position: absolute;
+  position: relative;
   bottom: 76px;
-  right: 946px;
+  right: -100x;
 }
 
 .Button {
   font-size: 16px;
   color: #ff0000;
   background-color: #4248f4;
+}
+
+.Text {
+  font-size: 26px;
+  position: relative;
+  bottom: 93px;
+  left: -206px;
+  z-index: 1;
+  color: gold;
 }
