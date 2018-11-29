@@ -27,7 +27,9 @@ const Result = props => {
 }
 
 class App extends React.Component {
-    state = { counter: 0 }
+
+
+    state = {counter: 0 }
 
     incrementCounter = incrementValue => {
         this.setState(prevstate => ({
@@ -52,13 +54,22 @@ class App extends React.Component {
                 </header>
                 <div className="Button">
                     <Button style={ {
-                        color: 'red' ,
+                        color: 'black',
+                        background: '#C0C0C0',
+                        position: 'absolute',
+                        top: '727px',
+                        left: '913px',
+                        'padding-top': '15px',
+                        'padding-right': '30px',
+                        'padding-bottom': '15px',
+                        'padding-left': '30px',
                     }
                     }
 
 
                             className="Button"
-                            incrementValue={1}
+
+                            incrementValue={"1"}
                             onClickFunction={this.incrementCounter} />
                 </div>
                 <div className="Result">
