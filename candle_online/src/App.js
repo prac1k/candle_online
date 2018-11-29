@@ -1,6 +1,7 @@
 import logo from "./candle.png";
 import React from 'react';
 import './styles/App.css';
+import fire from "./fire.png";
 
 class Button extends React.Component {
     handleClick = () => {
@@ -13,7 +14,7 @@ class Button extends React.Component {
                 this.props.style
             }onClick={this.handleClick}>
                 +{this.props.incrementValue}
-            </button>
+                </button>
         )
     }
 }
@@ -29,11 +30,12 @@ const Result = props => {
 class App extends React.Component {
 
 
-    state = {counter: 0 }
+    state = {counter: 0, show_img:false}
 
     incrementCounter = incrementValue => {
         this.setState(prevstate => ({
-            counter: prevstate.counter + incrementValue
+            counter: prevstate.counter + incrementValue,
+            show_img: true
         }))
     }
 
@@ -89,6 +91,19 @@ class App extends React.Component {
                 >
                     <Result counter={this.state.counter} />
             </div>
+                <div className="Firediv"style={ {
+                    'block-size': 'fit-content',
+                    height: '40vmin',
+                    position: 'fixed',
+                                    }
+                }>
+                    {this.state.show_img &&
+                     <img
+                        src={fire}
+                        className="Fireimage"
+                        alt="fire"/>
+                    }
+                    </div>
             </div>
 
         )

@@ -47,3 +47,11 @@
   z-index: 1;
   color: gold;
 }
+
+.Fireimage {
+  display: flex;
+  height: 26vmin;
+  position: relative;
+  top: -850px;
+  left: 865px;
+}
